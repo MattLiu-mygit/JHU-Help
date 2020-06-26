@@ -4,11 +4,11 @@ import Collapsible from '../Collapsible';
 const CollegeHelpPage = () => {
     return <>
         <h2>College Help/Academic Assistance</h2>
-        <Collapsible title='Avoid eye strain!' content={<>
+        <Collapsible className='outerCollapsible' title='Avoid eye strain!' content={<>
             <p>20-20-20 rule and other tips: Every 20 minutes, take a 20 second break to look at something at least 20 feet away. Read more about it <a href='https://www.insightvisioncenter.com/protect-eyes-harmful-digital-devices/'>here</a>.</p>
             <p>Important as all our lessons are now online :)</p>
         </>} />
-        <Collapsible title='Academic Support' content={<>
+        <Collapsible className='outerCollapsible' title='Academic Support' content={<>
             <Collapsible title='Study Consulting' content={<>
                 <p>Consultant meets with the mentee once a week and talks about the past week. Then the consultant will offer possible solutions and steps to improve. </p>
                 <p>This is a resource for <b>everyone</b>. Not just for the kid on academic probation, but for the kid with a 3.9 GPA who just wants someone to keep them accountable. </p>
@@ -28,7 +28,7 @@ const CollegeHelpPage = () => {
                 <p>Learn more and sign up <a href='https://krieger.jhu.edu/writingcenter/2020/03/22/remote-services/'>here</a>.</p>
             </>} />
         </>} />
-        <Collapsible title='Inflexible Professors' content={<>
+        <Collapsible className='outerCollapsible' title='Inflexible Professors' content={<>
             <p>Please submit issues in <a href='https://forms.gle/sCTFrCBy7VwQfHXD9'>this</a> form.</p>
             <p>Form is monitored by the students of JHU Help. If recurring issues are found, the issues will be forwarded to SGA and administration.</p>
             <p>

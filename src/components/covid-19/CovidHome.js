@@ -7,6 +7,7 @@ import NotFoundPage from '../NotFoundPage';
 import UnstableIncomePage from './UnstableIncomePage';
 import ResourceInsecurityPage from './ResourceInsecurityPage';
 import CollegeHelpPage from './CollegeHelpPage';
+import ChildcarePage from './ChildcarePage';
 
 const CovidHome = () => {
 
@@ -18,8 +19,14 @@ const CovidHome = () => {
             <span style={{ marginLeft: '1rem' }}><Link to='/covid-19/unstable-income' className='btn btn-primary'>Unstable Income</Link></span>
             <span style={{ marginLeft: '1rem' }}><Link to='/covid-19/resource-insecurity' className='btn btn-primary'>Resource Insecurity</Link></span>
             <span style={{ marginLeft: '1rem' }}><Link to='/covid-19/college-help' className='btn btn-primary'>College Help</Link></span>
+            <span style={{ marginLeft: '1rem' }}><Link to='/covid-19/childcare' className='btn btn-primary'>Childcare and Homeschooling</Link></span>
         </div>
+
+        {
+            // For Covid route handling
+        }
         <Switch>
+            <Route path='/covid-19/childcare' component={ChildcarePage} />
             <Route path='/covid-19/college-help' component={CollegeHelpPage} />
             <Route path='/covid-19/resource-insecurity' component={ResourceInsecurityPage} />
             <Route path='/covid-19/mental-emotional' component={MentalEmotionalHelp} />
