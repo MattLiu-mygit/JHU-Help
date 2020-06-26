@@ -1,6 +1,6 @@
 import React from 'react';
 import HomePage from './HomePage';
-import ContactPage from './ContactPage';
+import ContactPage from './covid-19/ContactPage';
 import Header from './common/Header';
 import CoursesPage from './CoursesPage';
 import { Route, Switch, Redirect } from 'react-router-dom';

@@ -54,7 +54,7 @@ server.post("/courses/", function (req, res, next) {
   }
 });
 
-server.post("/other/", function (req, res, next) {
+server.post("/SGA_Survey_Results/", function (req, res, next) {
   const error = validateCourse(req.body);
   if (error) {
     res.status(400).send(error);

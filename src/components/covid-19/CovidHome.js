@@ -1,6 +1,12 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { getData } from '../../api/SgaSurveyResultsApi';
 
 const CovidHome = () => {
+    const [SGAData, setSGAData] = useState([]);
+    useEffect(() => {
+        getData().then(data => setSGAData(data));
+    }, []);
+
     return (<>
         <div className='jumbotron'>
             <h1>Covid-19 Pandemic Resources</h1>
@@ -13,8 +19,7 @@ const CovidHome = () => {
                 </tr>
             </thead>
             <tbody>
-                <td>Personal Mental Health Issues</td>
-                <td>46.77%</td>
+                {SGAData.map(data => <tr><td>{data.label}</td><td>{data.percentage}</td></tr>)}
             </tbody>
         </table>
     </>);
