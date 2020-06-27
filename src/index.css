@@ -32,8 +32,11 @@
       color: lightskyblue;
       border-radius: 12px;
       margin: 1rem;
-      margin-top: 1rem;
+      margin-left: 0rem;
+      margin-bottom: 0rem;
       padding: 0.5rem;
+      width: text;
+      display: inline-block;
   }
 
 
@@ -41,7 +44,7 @@
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
     color: white;
-    height: 16rem;
+    min-height: 20rem;
     background-image: url(/machete.png);
     background-position: center;
     background-repeat: no-repeat;
