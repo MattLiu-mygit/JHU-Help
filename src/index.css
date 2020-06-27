@@ -26,3 +26,25 @@
   .outerCollapsible button {
       color: teal;
   }
+
+  .frontPageLink {
+      background-color: whitesmoke;
+      color: lightskyblue;
+      border-radius: 12px;
+      margin: 1rem;
+      margin-top: 1rem;
+      padding: 0.5rem;
+  }
+
+
+  .jumbotron {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    height: 16rem;
+    background-image: url(/machete.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: color-dodge;
+  }
