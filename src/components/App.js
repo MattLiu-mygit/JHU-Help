@@ -7,6 +7,8 @@ import NotFoundPAge from './NotFoundPage';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import CovidHome from './covid-19/CovidHome';
+import HelpUsPage from './HelpUsPage';
+import Maryland911Alternatives from './Maryland911Alternatives';
 
 function App() {
     return <div className='container-fluid'>
@@ -14,8 +16,10 @@ function App() {
         <Header />
         <Switch>
             <Route path='/' exact component={HomePage} />
+            <Route path='/maryland-911-alternatives' component={Maryland911Alternatives} />
             <Route path='/covid-19' component={CovidHome} />
             <Route path='/contact' component={ContactPage} />
+            <Route path='/help-us' component={HelpUsPage} />
             <Redirect from='/about-page' to='/about' />
             <Route component={NotFoundPAge} />
         </Switch>
